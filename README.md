@@ -1,3 +1,3 @@
 members:
-Julio Castro
+Julio Castro,
 Richard Lemay
