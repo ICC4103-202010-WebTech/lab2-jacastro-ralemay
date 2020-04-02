@@ -44,10 +44,10 @@ ActiveRecord::Schema.define(version: 2020_04_02_143808) do
   create_table "orders", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "Ticket_id"
-    t.integer "Customer_id"
-    t.index ["Customer_id"], name: "index_orders_on_Customer_id"
-    t.index ["Ticket_id"], name: "index_orders_on_Ticket_id"
+    t.integer "ticket_id"
+    t.integer "customer_id"
+    t.index ["customer_id"], name: "index_orders_on_Customer_id"
+    t.index ["ticket_id"], name: "index_orders_on_Ticket_id"
   end
 
   create_table "tickets", force: :cascade do |t|
