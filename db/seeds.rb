@@ -43,7 +43,7 @@ ticket3_1 = Ticket.create(price: 10000000, event_information_id:eventinfo3.id, T
 #Order
 
 order1 = Order.create(Ticket_id: ticket1.id, Customer_id: customer1.id)
-order1.Ticket_id = ticket1_1.id
+order1.Ticket_id << ticket1_1.id
 
 order2 = Order.create(Ticket_id: ticket2.id, Customer_id: customer1.id)
 order2.Ticket_id << ticket2_1.id
