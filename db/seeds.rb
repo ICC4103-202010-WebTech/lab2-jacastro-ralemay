@@ -42,15 +42,15 @@ ticket3_1 = Ticket.create(price: 10000000, event_information_id:eventinfo3.id, T
 
 #Order
 
-order1 = Order.create(Ticket_id: ticket1.id, Customer_id: customer1.id)
-order1.Ticket_id << ticket1_1.id
+order1 = Order.create(ticket_id: ticket1.id, customer_id: customer1.id)
+order1.ticket_id << ticket1_1.id
 
-order2 = Order.create(Ticket_id: ticket2.id, Customer_id: customer1.id)
-order2.Ticket_id << ticket2_1.id
+order2 = Order.create(ticket_id: ticket2.id, customer_id: customer1.id)
+order2.ticket_id << ticket2_1.id
 
-order3 = Order.create(Ticket_id: ticket2_1.id, Customer_id: customer2.id)
-order3.Ticket_id << ticket3_1.id
+order3 = Order.create(ticket_id: ticket2_1.id, customer_id: customer2.id)
+order3.ticket_id << ticket3_1.id
 
-order4 = Order.create(Ticket_id: ticket3.id, Customer_id: customer2.id)
-order4.Ticket_id << ticket2_1.id
+order4 = Order.create(ticket_id: ticket3.id, customer_id: customer2.id)
+order4.ticket_id << ticket2_1.id
 
